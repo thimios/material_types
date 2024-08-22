@@ -1,10 +1,8 @@
 <% define_template("material_type", jsonmodel_definition(:material_types)) do |form| %>
   <% material_type_form_field = lambda do |name, value| %>
     <div class="form-group">
-      <div class="col-sm-1 checkbox">
-        <%= form.checkbox name, {:plugin => true}, value %>
-      </div>
-      <%= form.label name, {:plugin => true, :style => "text-align: left;"}, ["col-sm-10"] %>
+      <%= form.checkbox name, {:plugin => true}, value %>
+      <%= form.label name, {:plugin => true, :style => "text-align: left !important;"} %>
     </div>
   <% end %>
 
